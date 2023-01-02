@@ -1,0 +1,11 @@
+services:
+  api:
+    build:
+      context: .
+      target: builder
+    container_name: ${MY_DB_CONTAINER_NAME}
+    environment:
+      PORT: 8000
+    ports:
+      - '${PORT}:8000'
+    restart: "no"

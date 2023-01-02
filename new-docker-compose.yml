@@ -1,0 +1,12 @@
+services:
+  api:
+    build:
+      context: .
+      target: builder
+    container_name: MY_DB_SERVER_NEW_DOCKER_COMPOSE
+    environment:
+      PORT: 8000
+    ports:
+      - '${PORT}:8000'
+    restart: "no"
+    

@@ -1,0 +1,1 @@
+PORT=8001 MY_DB_CONTAINER_NAME=CHANGED_MY_DB_SERVER docker-compose up -d --build
